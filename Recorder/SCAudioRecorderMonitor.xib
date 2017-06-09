@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="SCAudioRecorderMonitor">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-recorder-mic" translatesAutoresizingMaskIntoConstraints="NO" id="JLm-BB-aah">
+                    <rect key="frame" x="49" y="30" width="22" height="31"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QYB-8G-E0i">
+                    <rect key="frame" x="76" y="56" width="8" height="5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="2Rt-xR-Kuh"/>
+                        <constraint firstAttribute="width" constant="8" id="YwG-A9-twh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xd-jS-yBN">
+                    <rect key="frame" x="76" y="48" width="10" height="5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="10" id="KFJ-eT-P5N"/>
+                        <constraint firstAttribute="height" constant="5" id="vJn-CC-PzY"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RcE-13-N38">
+                    <rect key="frame" x="76" y="41" width="13" height="5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="J09-1B-QQP"/>
+                        <constraint firstAttribute="width" constant="13" id="yoT-mz-zXs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIH-Sn-Ltl">
+                    <rect key="frame" x="76" y="33" width="15" height="5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="DvT-Gd-16A"/>
+                        <constraint firstAttribute="width" constant="15" id="WaG-Ge-nGc"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="正在录音中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVo-Yl-bnS">
+                    <rect key="frame" x="28.5" y="80" width="83.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QYB-8G-E0i" firstAttribute="bottom" secondItem="JLm-BB-aah" secondAttribute="bottom" id="0G5-9X-7BV"/>
+                <constraint firstItem="RcE-13-N38" firstAttribute="top" secondItem="gIH-Sn-Ltl" secondAttribute="bottom" constant="3" id="0Ow-Fd-dIy"/>
+                <constraint firstAttribute="bottom" secondItem="yVo-Yl-bnS" secondAttribute="bottom" constant="18" id="41D-Ak-VIO"/>
+                <constraint firstItem="RcE-13-N38" firstAttribute="leading" secondItem="2xd-jS-yBN" secondAttribute="leading" id="4mO-Ze-HlU"/>
+                <constraint firstItem="JLm-BB-aah" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="Kf8-Fr-eOf"/>
+                <constraint firstItem="QYB-8G-E0i" firstAttribute="leading" secondItem="JLm-BB-aah" secondAttribute="trailing" constant="5" id="Rvu-Fb-mJN"/>
+                <constraint firstItem="JLm-BB-aah" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="49" id="W76-5k-EeR"/>
+                <constraint firstItem="2xd-jS-yBN" firstAttribute="leading" secondItem="QYB-8G-E0i" secondAttribute="leading" id="dkG-d7-Vsf"/>
+                <constraint firstItem="gIH-Sn-Ltl" firstAttribute="leading" secondItem="RcE-13-N38" secondAttribute="leading" id="eC4-vu-xVI"/>
+                <constraint firstItem="yVo-Yl-bnS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="esu-hs-d3G"/>
+                <constraint firstItem="QYB-8G-E0i" firstAttribute="top" secondItem="2xd-jS-yBN" secondAttribute="bottom" constant="3" id="lHh-Qy-SAN"/>
+                <constraint firstItem="2xd-jS-yBN" firstAttribute="top" secondItem="RcE-13-N38" secondAttribute="bottom" constant="2" id="v3h-nL-1RM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="statusLabel" destination="yVo-Yl-bnS" id="imQ-hS-mKK"/>
+                <outletCollection property="levelViews" destination="QYB-8G-E0i" id="oB3-r0-rPr"/>
+                <outletCollection property="levelViews" destination="2xd-jS-yBN" id="f6y-kB-Arp"/>
+                <outletCollection property="levelViews" destination="RcE-13-N38" id="tCz-TI-1eg"/>
+                <outletCollection property="levelViews" destination="gIH-Sn-Ltl" id="S9X-c5-s7U"/>
+            </connections>
+            <point key="canvasLocation" x="-233" y="-33"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon-recorder-mic" width="22" height="31"/>
+    </resources>
+</document>
